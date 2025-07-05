@@ -18,7 +18,7 @@ const DisplayHome = () => {
       </div>
       <div className="mb-4">
         <h1 className="my-5 font-bold text-2xl">Today's biggest Hits</h1>
-        <div className="flex overflow-auto">
+        <div className="flex w-100vw flex-wrap md:overflow-auto md:flex-nowrap ">
           {songsData.map((item) => (
             <SongItem songItemDetails={item} key={item.id} />
           ))}

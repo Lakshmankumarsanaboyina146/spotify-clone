@@ -1,8 +1,9 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRef } from "react";
 import { songsData } from "../assets/assets";
+import { PlayerContext } from "./player-context";
 
-export const PlayerContext = createContext();
+// export const PlayerContext = createContext();
 
 const PlayerContextProvider = (props) => {
   const audioRef = useRef();

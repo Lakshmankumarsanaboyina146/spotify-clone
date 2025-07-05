@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Navbar from "./Navbar";
 import { useParams } from "react-router-dom";
 import { albumsData, assets, songsData } from "../assets/assets";
-import { PlayerContext } from "../context/playerContext";
+import { PlayerContext } from "../context/player-context";
 
 const DisplayAlbum = () => {
   const { id } = useParams();
@@ -13,7 +13,7 @@ const DisplayAlbum = () => {
     <>
       <Navbar />
       <div className="mt-10 flex gap-5 flex-col md:flex-row md:items-center">
-        <img className="w-48 rounded" src={albumData.image} alt="" />
+        <img className="w-48 rounded" src={albumData.image} alt="albumImage" />
         <div className="flex flex-col">
           <p>Playlist</p>
           <h2 className="text-5xl font-bold mb-4 md:text-7xl">
